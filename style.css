@@ -153,23 +153,78 @@ nav button{
     border: 2px solid rgb(165, 0, 0);
 }
 
-.banner{
-    width: 80vw;
+.container {
+    position: relative;
+    max-width: 80vw;
     margin: 0 auto;
-    /* border: 5px solid blue; */
-}
-
-.slider{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    gap: 30px;
-    margin-top: 16px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .slider-wrapper {
+    position: relative;
     overflow: hidden;
-}
-
-span img{
+  }
+  
+  .slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .card {
+    position: relative;
+    min-width: 180px;
+    flex-shrink: 0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-}
+  }
+  
+  .rank {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }

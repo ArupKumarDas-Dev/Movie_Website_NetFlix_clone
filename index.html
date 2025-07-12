@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="main">
         <nav>
@@ -36,44 +37,29 @@
                 <button class="btn btn-red">Get Started &gt;</button>
             </div>
         </div>
-        <div class="banner">
-        <h2 style="color: white;">Trending Now</h2>
-        <div class="slider">
-            <span>
-                <img src="assets/poster1.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster2.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster3.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster4.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster5.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster6.webp" alt="">
-            </span>
-
-            <span>
-                <img src="assets/poster7.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster8.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster9.webp" alt="">
-            </span>
-            <span>
-                <img src="assets/poster10.webp" alt="">
-            </span>
-
+        <div class="container">
+            <h2 class="title">Trending Now</h2>
+            <div class="slider-wrapper">
+                <button class="nav prev">&#10094;</button>
+                <div class="slider" id="slider">
+                    <div class="card"><img src="assets/poster1.webp" alt="Squid Game"><span class="rank">1</span></div>
+                    <div class="card"><img src="assets/poster2.webp" alt="Aap Jaisa Koi"><span class="rank">2</span>
+                    </div>
+                    <div class="card"><img src="assets/poster3.webp" alt="Raid 2"><span class="rank">3</span></div>
+                    <div class="card"><img src="assets/poster4.webp" alt="Kapil Show"><span class="rank">4</span></div>
+                    <div class="card"><img src="assets/poster5.webp" alt="8 Vasanthalu"><span class="rank">5</span>
+                    </div>
+                    <div class="card"><img src="assets/poster6.webp" alt="6"><span class="rank">6</span></div>
+                    <div class="card"><img src="assets/poster7.webp" alt="6"><span class="rank">7</span></div>
+                    <div class="card"><img src="assets/poster8.webp" alt="6"><span class="rank">8</span></div>
+                    <div class="card"><img src="assets/poster9.webp" alt="6"><span class="rank">9</span></div>
+                    <div class="card"><img src="assets/poster10.webp" alt="6"><span class="rank">10</span></div>
+                </div>
+                <button class="nav next">&#10095;</button>
+            </div>
         </div>
-    </div>
 
+        <script src="script.js"></script>
 </body>
 
 </html>
