@@ -166,4 +166,10 @@ nav button{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     gap: 30px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+span img{
+    border-radius: 5px;
 }
