@@ -171,6 +171,12 @@ nav button{
     position: relative;
     min-width: 180px;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.07);
   }
   
   .card img {
@@ -278,7 +284,6 @@ nav button{
     border-bottom: 4px solid #000;
     margin-bottom: 10px;
   }
-  
   .faq-question {
     width: 100%;
     background: #303030;
@@ -292,8 +297,11 @@ nav button{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    transition: 0.1s;
   }
-  
+  .faq-question:hover {
+    background: #7b7a7b95;
+  }
   .faq-question i {
     font-size: 20px;
   }
