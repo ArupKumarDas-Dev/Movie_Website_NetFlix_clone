@@ -60,7 +60,6 @@ nav button{
     position: relative;
     z-index: 2;
     color : white;
-    /* font-size: ; */
     gap: 20px;
 }
 
@@ -76,7 +75,6 @@ nav button{
 }
 .content> :nth-child(3){
     font-size: 16px;
-    /* font-weight: 400; */
 }
 
 .content input{
@@ -436,25 +434,38 @@ nav button{
   /* mobile view */
 
   @media (max-width: 768px){
+    body{
+        background-color: #000;
+    }
+    
+    .main{
+        background-image: url(assets/background.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-size: max(1700px, 100vw);
+    }
     .content> :first-child{
         font-size: 30px;
+        
     }
     .content> :nth-child(2){
         font-size: 18px;
+        text-align: center;
     }
     .content> :nth-child(3){
         font-size: 11px;
+        text-align: center;
     }
     nav img{
         width: 100px;
     }
     .content input{
-        padding: 10px 100px 14px 15px;
+        padding: 10px 10px 15px 10px;
         font-size: 9px;
     }
     .btn-red{
         padding: 11px 30px;
-        font-size: 9px;
+        font-size: 10px;
     }
     .btn-red-sm{
         padding: 2px 6px;
@@ -463,6 +474,45 @@ nav button{
     .lang-select1{
         width: 100px;
         height: 35px;
+        font-size: 8px;
+    }
+  }
+/* Responsive styles for tablet view */
+  @media (max-width: 600px){
+    .main{
+      background-image: url(assets/background.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-size: max(1100px, 100vw);
+  }
+    .content> :first-child{
+        font-size: 24px;
+    }
+    .content> :nth-child(2){
+        font-size: 16px;
+    }
+    .content> :nth-child(3){
         font-size: 10px;
     }
+    nav img{
+        width: 80px;
+    }
+    .content input{
+        padding: 10px 5px 15px 5px;
+        font-size: 8px;
+    }
+    .btn-red{
+        padding: 9px 20px;
+        font-size: 9px;
+    }
+    .btn-red-sm{
+        padding: 2px 6px;
+        font-size: 10px;
+    }
+    .lang-select1{
+        width: 80px;
+        height: 30px;
+        font-size: 7px;
+    }
+
   }
