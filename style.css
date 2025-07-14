@@ -432,3 +432,37 @@ nav button{
     border-radius: 4px;
     font-size: 17px;
   }
+
+  /* mobile view */
+
+  @media (max-width: 768px){
+    .content> :first-child{
+        font-size: 30px;
+    }
+    .content> :nth-child(2){
+        font-size: 18px;
+    }
+    .content> :nth-child(3){
+        font-size: 11px;
+    }
+    nav img{
+        width: 100px;
+    }
+    .content input{
+        padding: 10px 100px 14px 15px;
+        font-size: 9px;
+    }
+    .btn-red{
+        padding: 11px 30px;
+        font-size: 9px;
+    }
+    .btn-red-sm{
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+    .lang-select1{
+        width: 100px;
+        height: 35px;
+        font-size: 10px;
+    }
+  }
